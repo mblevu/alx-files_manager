@@ -1,5 +1,15 @@
 const redis = require('redis');
 
+/**
+ * Represents a Redis client.
+ *
+ * This class provides methods to interact with a Redis server.
+ * It allows for checking the connection status, getting values by key,
+ * setting values with an expiration time,
+ * and deleting values by key.
+ *
+ * @class RedisClient
+ */
 class RedisClient {
   constructor() {
     this.client = redis.createClient();
